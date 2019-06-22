@@ -5,7 +5,7 @@
   <title>JS + CSS Clock</title>
 </head>
 <body>
-
+  <script defer="defer" src="index.js"></script>
 
     <div class="clock">
       <div class="clock-face">
@@ -62,7 +62,26 @@
       background: black;
       position: absolute;
       top: 50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition: all 0.05s;
+      transition-timing-function: ease-in-out;
     }
+
+    .hour-hand{
+      width: 40%;
+      margin-left: 10%
+    }
+
+    .min-hand{
+      height: 5px;
+    }
+
+    .second-hand{
+      height: 3px;
+    }
+
+
 
   </style>
 
